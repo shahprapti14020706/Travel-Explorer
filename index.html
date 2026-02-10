@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Explorer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Travel Explorer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cards">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL/HERO -->
+<div id="travelCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="300">
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Carousel Items -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" class="d-block w-100" alt="Mountains" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="display-4">Explore Mountains</h3>
+        <p class="lead">Adventure & peace together</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100" alt="Beaches" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="display-4">Relax on Beaches</h3>
+        <p class="lead">Feel the ocean breeze</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b" class="d-block w-100" alt="Cities" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="display-4">Experience Cities</h3>
+        <p class="lead">Feel the city life</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- CARDS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Explore Destinations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="card-img-top" alt="Mountains">
+          <div class="card-body">
+            <h5 class="card-title">Mountains</h5>
+            <p class="card-text">Adventure & peace together.</p>
+            <a href="#" class="btn btn-dark">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Beaches">
+          <div class="card-body">
+            <h5 class="card-title">Beaches</h5>
+            <p class="card-text">Relax near the ocean.</p>
+            <a href="#" class="btn btn-dark">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b" class="card-img-top" alt="Cities">
+          <div class="card-body">
+            <h5 class="card-title">Cities</h5>
+            <p class="card-text">Feel the city life.</p>
+            <a href="#" class="btn btn-dark">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-dark btn-lg">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-2">&copy; 2026 Travel Explorer | HTML & CSS Project</p>
+    <p class="small text-muted">Explore the world, one destination at a time.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
